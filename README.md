@@ -48,7 +48,7 @@ You will need 3 blocks to make this happen and the first two are already provide
 ## Step 4
 **Turtle Logo - "Hello, World!"**
 
-Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name - or more technically a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)), that you can use as a reference in your program.
+Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name - or more technically a [variable](https://tinyurl.com/95n35y8w), that you can use as a reference in your program.
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -73,12 +73,37 @@ Next you will need to create your turtle. To do this you will use the ``set myTu
 ## Step 5
 **Turtle Logo - "Hello, World!"**
 
-Now that we have a turtle object, you can ask it to say something. Drag out the ``||myTurtle say "Hello, World!" ⊕||`` block and place it inside the ``on start`` block at the bottom.
+Now that we have a turtle object, you can ask it to say something. Drag out the ``myTurtle say "Hello, World!" ⊕`` block and place it inside the ``on start`` block at the bottom.
+
+```blocks
+    let myTurtle = turtle.fromSprite(sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . e e . . . . . . . . 
+        . . . . . e e e e . . 7 7 7 . . 
+        . . . . e e e d e e . 7 7 f 7 . 
+        . . . e e e e e d e e 7 7 7 7 . 
+        . . . e e d e e e e e 7 7 7 . . 
+        . . 7 e e e e e e e e . . . . . 
+        . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+        . . . 7 7 7 7 7 7 7 7 . . . . . 
+        . . 7 7 7 . . . . 7 7 7 . . . . 
+        . . 7 7 7 . . . . . 7 7 . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Player))
+    myTurtle.say("Hello, World!")
+```
+## Step 6
+**Turtle Logo - "Hello, World!"**
 
 Success!
 
 Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
-```blocks
+
+```ghost
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
