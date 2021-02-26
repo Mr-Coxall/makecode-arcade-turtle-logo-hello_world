@@ -40,7 +40,7 @@ It is tradition with programmers when they start using a new programming languag
 ## Step 3
 **Turtle Logo - "Hello, World!"**
 
-You will need 3 blocks to make this happen and the first two are already provided for you. All programs will have an ``on start`` block. This block runs all the commands that are inside it as soon as the program begins.
+You will need 3 blocks to make this happen and the first two are already provided for you. All programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
 ```blocks
 
 ```
