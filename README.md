@@ -25,7 +25,7 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
 
 ## Introduction @unplugged
 
-In this tutorial you will create your first Turtle Logo program using Makecode Arcade. You will get a turtle showing up on your screen and have it say, "Hello, World!".
+In this tutorial you will create your first Turtle Logo program using Makecode Arcade. You will get a turtle showing up in your game console and have it say, "Hello, World!".
 
 ## Step 1
 **Turtle Logo - "Hello, World!"**
@@ -40,7 +40,7 @@ It is tradition with programmers when they start using a new programming languag
 ## Step 3
 **Turtle Logo - "Hello, World!"**
 
-You will need 3 blocks to make this happen and the first two are already provided. All programs will have an ``on start`` block. This block runs all the commands that are inside it as soon as the program begins.
+You will need 3 blocks to make this happen and the first two are already provided for you. All programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
 ```blocks
 
 ```
@@ -48,7 +48,7 @@ You will need 3 blocks to make this happen and the first two are already provide
 ## Step 4
 **Turtle Logo - "Hello, World!"**
 
-Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name - or more technically a [variable](https://tinyurl.com/95n35y8w), that you can use as a reference in your program.
+Next you will need to create your turtle. To do this you will use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name, or more technically a [variable](https://tinyurl.com/95n35y8w), that you can use as a reference in your program.
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -73,7 +73,7 @@ Next you will need to create your turtle. To do this you will use the ``set myTu
 ## Step 5
 **Turtle Logo - "Hello, World!"**
 
-Now that we have a turtle object, you can ask it to say something. Drag out the ``myTurtle say "Hello, World!" ⊕`` block and place it inside the ``on start`` block at the bottom.
+Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block and place it inside the ⇢``on start``⇠ block at the bottom.
 
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
@@ -101,7 +101,7 @@ Now that we have a turtle object, you can ask it to say something. Drag out the 
 
 Success!
 
-Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
+Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish. If you want to run it again, click the "🔄" button on the game console.
 
 ```ghost
     let myTurtle = turtle.fromSprite(sprites.create(img`
