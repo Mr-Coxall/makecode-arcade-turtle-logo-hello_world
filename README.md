@@ -48,7 +48,7 @@ You will need 3 blocks to make this happen and the first two are already provide
 ## Step 4
 **Turtle Logo - "Hello, World!"**
 
-Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name (or more technically a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science))) that you can use as a reference in your program.
+Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name (or more technically a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) that you can use as a reference in your program.
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -74,6 +74,10 @@ Next you will need to create your turtle. To do this you will use the ``set myTu
 **Turtle Logo - "Hello, World!"**
 
 Now that we have a turtle object, you can ask it to say something. Drag out the ``myTurtle say "Hello, World!" ⊕`` block and place it inside the ``on start`` block at the bottom.
+
+Success!
+
+Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -96,6 +100,26 @@ Now that we have a turtle object, you can ask it to say something. Drag out the 
     myTurtle.say("Hello, World!")
 ```
 
-Success!
-
-Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
+```ghost
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+myTurtle.moveDirection(TurtleDirection.Forward, 25)
+myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myTurtle.say("Hello, World!")
+```
