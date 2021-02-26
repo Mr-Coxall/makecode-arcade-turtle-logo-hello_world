@@ -21,83 +21,33 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     `, SpriteKind.Player))
 ```
 
-# Turtle Logo
+# Turtle Logo - "Hello, World!"
 
 ## Step 1
-**Turtle Logo**
+**Turtle Logo - "Hello, World!"**
 
-Code your solution below.
+Welcome to coding with Turtle Logo. Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You will drag blocks of code into a sequence of steps to tell the "turtle" what to do. You can see the output in the game controller on the left hand side.
+![game controller](./assets/game_controller.png "Game Controller")
 
-```ghost
-let myTurtle = turtle.fromSprite(sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . e e . . . . . . . . 
-    . . . . . e e e e . . 7 7 7 . . 
-    . . . . e e e d e e . 7 7 f 7 . 
-    . . . e e e e e d e e 7 7 7 7 . 
-    . . . e e d e e e e e 7 7 7 . . 
-    . . 7 e e e e e e e e . . . . . 
-    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
-    . . . 7 7 7 7 7 7 7 7 . . . . . 
-    . . 7 7 7 . . . . 7 7 7 . . . . 
-    . . 7 7 7 . . . . . 7 7 . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 25)
-myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myTurtle.say("Hello, World!")
-myTurtle.pen(TurtlePenMode.Up)
-myTurtle.setPenColor(0)
-turtle.clearScreen()
-myTurtle.home()
-myTurtle.setPositionCartesian(0, 0)
-myTurtle.stamp(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . e e . . . . . . . . 
-    . . . . . e e e e . . 7 7 7 . . 
-    . . . . e e e d e e . 7 7 f 7 . 
-    . . . e e e e e d e e 7 7 7 7 . 
-    . . . e e d e e e e e 7 7 7 . . 
-    . . 7 e e e e e e e e . . . . . 
-    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
-    . . . 7 7 7 7 7 7 7 7 . . . . . 
-    . . 7 7 7 . . . . 7 7 7 . . . . 
-    . . 7 7 7 . . . . . 7 7 . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `)
-myTurtle.setSpeed(50)
+## Step 2
+**Turtle Logo - "Hello, World!"**
 
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-})
+It is tradition with programmers when they start using a new programming language to get the computer to say "Hello, World!" back to them. This might seem strange, but just getting the computer to say something back to you can sometime be complex.
+![Hello, World! program](./assets/hello_world_screenshot.png "Hello, World!")
 
-game.splash("")
-game.showLongText("", DialogLayout.Bottom)
+## Step 3
+**Turtle Logo - "Hello, World!"**
 
-effects.confetti.startScreenEffect()
+You will need 3 blocks to make this happen and the first two are already provided. All programs will have an "on start" block. This block runs all the commands that are inside it as soon as the program start running. 
 
-forever(function () {
-})
-pause(1000)
-for (let index = 0; index < 5; index++) {
-}
-while (false) { 
-}
-for (let value of list) { 
-}
-break;
-continue;
+## Step 4
+**Turtle Logo - "Hello, World!"**
 
-if (true) {
-}
+Next you will need to create your turtle. To do this you will use the "set myTurtle to turtle of sprite XX of kind PLayer". Each new turtle object in your game will need one of these. This creates the object and gives it a name (or more technically a variable) that you can use to reference your object.
 
-list = [0, 1]
-text_list = ["a", "b", "c"]
-```
+## Step 5
+**Turtle Logo - "Hello, World!"**
+
+Now that we have a turtle object, you can ask it to say something. Drag out the "myTurtle say "Hello, World!" block and place it after the first one. 
+Success!
+Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
