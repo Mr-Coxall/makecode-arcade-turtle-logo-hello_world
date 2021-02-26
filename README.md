@@ -65,7 +65,7 @@ Next you will need to create your turtle. To do this you will use the ⇢``set m
 ```
 
 ## Step 5
-Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block and place it inside the ⇢``on start``⇠ block at the bottom.
+Now that we have a turtle object, you can ask it to say something. Drag out the ``myTurtle say "Hello, World!" ⊕`` block and place it inside the ``on start`` block at the bottom.
 
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
@@ -91,7 +91,7 @@ Now that we have a turtle object, you can ask it to say something. Drag out the 
 ## Step 6
 Success!
 
-Notice to the left, your object said "Hello, World" for 1 second and then it words vanish. If you want to run it again, click the "🔄" button on the game console.
+Notice to the left, your object said "Hello, World" for 1 second and then it words vanish. If you want to run it again, click the "reload" button on the game console.
 
 ## Step 7
 Done.
@@ -115,7 +115,5 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 25)
-myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
 myTurtle.say("Hello, World!")
 ```
