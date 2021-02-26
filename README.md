@@ -23,11 +23,17 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
 
 # Turtle Logo - "Hello, World!"
 
+## Introduction @unplugged
+
+![Game animation](/static/tutorials/chase-the-pizza.gif)
+
+In this tutorial you will create a game with 2 sprites, a ``||sprites:Player||`` sprite and a ``||sprites:Food||`` sprite. The goal of the game is to eat as much pizza as you can before the time runs out! Each time your player catches the pizza, you gain points and the countdown is restarted.
+
 ## Step 1
 **Turtle Logo - "Hello, World!"**
 
 Welcome to coding with Turtle Logo. Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You will drag blocks of code into a sequence of steps to tell the **turtle** what to do. You can see the output in the game controller on the left hand side.
-![game controller](./assets/game_controller.png "Game Controller")
+![game controller](/assets/game_controller.png "Game Controller")
 
 ## Step 2
 **Turtle Logo - "Hello, World!"**
@@ -38,7 +44,7 @@ It is tradition with programmers when they start using a new programming languag
 ## Step 3
 **Turtle Logo - "Hello, World!"**
 
-You will need 3 blocks to make this happen and the first two are already provided. All programs will have an ``on start`` block. This block runs all the commands that are inside it as soon as the program start running.
+You will need 3 blocks to make this happen and the first two are already provided. All programs will have an ``||loops:on start||`` block. This block runs all the commands that are inside it as soon as the program start running.
 ```blocks
 
 ```
@@ -46,7 +52,7 @@ You will need 3 blocks to make this happen and the first two are already provide
 ## Step 4
 **Turtle Logo - "Hello, World!"**
 
-Next you will need to create your turtle. To do this you will use the ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your game will need one of these. This creates the turtle object and gives it a name (or more technically a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) that you can use to refer to it in your program.
+Next you will need to create your turtle. To do this you will use the ``||turtle.fromSprite(sprite)||`` xxx ``set myTurtle to turtle of sprite ▢ of kind Player`` block and place it inside the ``on start`` block. Each new turtle object in your game will need one of these. This creates the turtle object and gives it a name (or more technically a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) that you can use to refer to it in your program.
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -76,3 +82,7 @@ Now that we have a turtle object, you can ask it to say something. Drag out the 
 Success!
 
 Notice to the left, your object is now saying "Hello, World" for 1 second and then it words vanish.
+
+```blocks
+    myTurtle.say("Hello, World!")
+```
