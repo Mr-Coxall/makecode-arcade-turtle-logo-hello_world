@@ -38,7 +38,7 @@ Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You w
 It is tradition with programmers when they start using a new programming language to get the computer to say ["Hello, World!"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#:~:text=A%20%22Hello%2C%20World!%22%20program%20generally%20is%20a%20computer,by%20people%20learning%20to%20code.) back to them. This might seem strange but just getting the computer to say something back to you can sometime be complex.
 
 ## Step 3
-You will need 3 blocks to make this happen and the first 2 are already provided for you below. All programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
+You will need 3 blocks to make this happen and the first 2 are already provided for you below. All our programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
 ```blocks
 
 ```
@@ -67,7 +67,7 @@ Next you will need to create your turtle. To do this you would use the ⇢``set 
 ```
 
 ## Step 5
-Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block under the "Turtle" menu on the left hand side and place it inside the ⇢``on start``⇠ block at the bottom.
+Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block under the "Turtle" menu below and place it inside the ⇢``on start``⇠ block at the bottom.
 
 ```blocks
     let myTurtle = turtle.fromSprite(sprites.create(img`
@@ -93,12 +93,31 @@ Now that we have a turtle object, you can ask it to say something. Drag out the 
 ## Step 6
 Success!
 
-Notice in the game console to the left, your object said "Hello, World" for 1 second and then it words vanish. If you want to run it again, click the "reload" button on the game console.
+Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run it again, click the "reload" button on the game console.
 
 ## Step 7
 Done.
 
+
 ```ghost
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
 myTurtle.moveDirection(TurtleDirection.Forward, 25)
 myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
 myTurtle.say("Hello, World!")
@@ -107,4 +126,49 @@ myTurtle.setPenColor(0)
 turtle.clearScreen()
 myTurtle.home()
 myTurtle.setPositionCartesian(0, 0)
+myTurtle.stamp(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `)
+myTurtle.setSpeed(50)
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+})
+
+game.splash("")
+game.showLongText("", DialogLayout.Bottom)
+
+effects.confetti.startScreenEffect()
+
+forever(function () {
+})
+pause(1000)
+for (let index = 0; index < 5; index++) {
+}
+while (false) { 
+}
+for (let value of list) { 
+}
+break;
+continue;
+
+if (true) {
+}
+
+list = [0, 1]
+text_list = ["a", "b", "c"]
 ```
