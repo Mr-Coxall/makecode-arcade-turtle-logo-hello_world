@@ -30,7 +30,12 @@ In this tutorial you will create your first Turtle Logo program. You will get a 
 ![Hello, World!](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-hello_world/raw/main/assets/hello_world_screenshot.png)
 
 ## Step 1
-Once you can make the **Turtle** show up and talk, the next step is to make it move.
+Welcome to coding with Turtle Logo.
+
+Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You will drag blocks of code into a sequence of steps to tell the **turtle** what to do. You can see some starter code below and the output in the game controller on the left hand side.
+
+## Step 2
+It is tradition with programmers when they start using a new programming language to get the computer to say ["Hello, World!"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#:~:text=A%20%22Hello%2C%20World!%22%20program%20generally%20is%20a%20computer,by%20people%20learning%20to%20code.) back to them. This might seem strange but just getting the computer to say something back to you can sometime be very complex.
 
 ## Step 2
 Into the provided code below, drag out the ⇢``myTurtle move forward 25 steps``⇠ block and then see what happens to your **Turtle**.
