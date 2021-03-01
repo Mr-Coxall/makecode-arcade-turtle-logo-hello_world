@@ -25,25 +25,14 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
 
 ## Introduction @unplugged
 
-In this tutorial you will create your first Turtle Logo program. You will get a turtle showing up in your game console and have it say, "Hello, World!".
-![Hello, World!](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-hello_world/raw/main/assets/hello_world_screenshot.png)
+In this tutorial you will learn how to move and turn your **Turtle**.
+![Hello, World!](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_and_turn_screenshot.png)
 
 ## Step 1
-Welcome to coding with Turtle Logo.
-
-Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You will drag blocks of code into a sequence of steps to tell the **turtle** what to do. You can see some starter code below and the output in the game controller on the left hand side.
+Once you can make the **Turtle** show up and talk, the next step is to make it move.
 
 ## Step 2
-It is tradition with programmers when they start using a new programming language to get the computer to say ["Hello, World!"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#:~:text=A%20%22Hello%2C%20World!%22%20program%20generally%20is%20a%20computer,by%20people%20learning%20to%20code.) back to them. This might seem strange but just getting the computer to say something back to you can sometime be very complex.
-
-## Step 3
-You will need 3 blocks to make this happen and the first 2 are already provided for you below. All our programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
-```blocks
-
-```
-
-## Step 4
-Next you will need to create your turtle. To do this you would use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. This has already been done for you. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name "**myTurtle**", or more technically a [variable](https://tinyurl.com/95n35y8w) name "**myTurtle**", that you can use as a reference in your program.
+Into the provided code below, drag out the ⇢``myTurtle move forward 25 steps``⇠ block and then see what happens to your **Turtle**.
 ```blocks
 let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -63,11 +52,83 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
+myTurtle.moveDirection(TurtleDirection.Forward, 25)
 ```
 
+## Step 3
+Hopefully you noticed the **Turtle** moved forwards and it left a trail behind when it moved.
+![Turtle move forward](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_forward_screenshot.png)
+
+## Step 4
+You can change the **25** to different numbers to make it move more or less. You can also select the **forward** tab and change the direction to **backwards** to make it move in the opposite direction.
+![Turtle move forward](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_backwards_screenshot.png)
+
 ## Step 5
-Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block under the "Turtle" menu below and place it inside the ⇢``on start``⇠ block at the bottom.
+Try moving the **Turtle** backwards 50 steps.
 ```blocks
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+myTurtle.moveDirection(TurtleDirection.Backward, 50)
+```
+## Step 6
+Hopefully you noticed the **Turtle** moved like the image below.
+![Turtle move forward](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_turtle_backwards_screenshot.png)
+
+## Step 7
+Besides forwards and backwards, the **Turtle** can also turn. You use the ⇢``myTurtle turn right by 90°``⇠ block to turn the **Turtle**. Try making the **Turtle**:
+- move forward 30 steps
+- turn right 90°
+- move forward 30 more steps
+```blocks
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+myTurtle.moveDirection(TurtleDirection.Forward, 30)
+myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myTurtle.moveDirection(TurtleDirection.Forward, 30)
+```
+
+## Step 8
+Hopefully you noticed the **Turtle** moved like the image below.
+![Turtle move forward](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_and_turn_screenshot.png)
+
+## Step 9
+Done.
+
+You now know how to make the **Turtle** move and turn.
+
+```ghost
 let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -88,13 +149,3 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     `, SpriteKind.Player))
 myTurtle.say("Hello, World!")
 ```
-
-## Step 6
-Success!
-
-Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run it again, click the "reload" button on the game console.
-
-## Step 7
-Done.
-
-You have successfully completed your first program in Turtle Logo.
