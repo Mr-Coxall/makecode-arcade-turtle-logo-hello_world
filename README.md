@@ -42,6 +42,53 @@ You will need 3 blocks to make this happen and the first 2 are already provided 
 
 ```
 
+## Step 4
+Next you will need to create your turtle. To do this you would use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. This has already been done for you. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name "**myTurtle**", or more technically a [variable](https://tinyurl.com/95n35y8w) name "**myTurtle**", that you can use as a reference in your program.
+```blocks
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+```
+
+## Step 5
+Now that we have a turtle object, you can ask it to say something. Drag out the ⇢``myTurtle say "Hello, World!" ⊕``⇠ block under the "Turtle" menu below and place it inside the ⇢``on start``⇠ block at the bottom.
+```blocks
+let myTurtle = turtle.fromSprite(sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e . . . . . . . . 
+    . . . . . e e e e . . 7 7 7 . . 
+    . . . . e e e d e e . 7 7 f 7 . 
+    . . . e e e e e d e e 7 7 7 7 . 
+    . . . e e d e e e e e 7 7 7 . . 
+    . . 7 e e e e e e e e . . . . . 
+    . 7 . 7 7 7 7 7 7 7 7 . . . . . 
+    . . . 7 7 7 7 7 7 7 7 . . . . . 
+    . . 7 7 7 . . . . 7 7 7 . . . . 
+    . . 7 7 7 . . . . . 7 7 . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player))
+myTurtle.say("Hello, World!")
+```
+
 ## Step 6
 Success!
 
