@@ -25,8 +25,9 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
 
 ## Introduction @unplugged
 
-In this tutorial you will learn how to move and turn your **Turtle**.
-![Hello, World!](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-moving_and_turning/raw/main/assets/move_and_turn_screenshot.png)
+In this tutorial you will create your first Turtle Logo program. You will get a turtle showing up in your game console and have it say, "Hello, World!".
+
+![Hello, World!](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-hello_world/raw/main/assets/hello_world_screenshot.png)
 
 ## Step 1
 Once you can make the **Turtle** show up and talk, the next step is to make it move.
