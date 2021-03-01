@@ -75,7 +75,7 @@ Notice in the game console to the left, your object said "Hello, World!" for 1 s
 ## Step 7
 Done.
 
-You have successfully completed your first program in Turtle Logo.
+You now know how to make your **Turtle** say something.
 
 
 ```ghost
