@@ -52,7 +52,7 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 25)
+myTurtle.say("Hello, World!")
 ```
 
 ## Step 3
@@ -84,7 +84,7 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Backward, 50)
+myTurtle.say("Hello, World!")
 ```
 ## Step 6
 Hopefully you noticed the **Turtle** moved like the image below.
@@ -114,9 +114,7 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 30)
-myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myTurtle.moveDirection(TurtleDirection.Forward, 30)
+myTurtle.say("Hello, World!")
 ```
 
 ## Step 8
