@@ -94,7 +94,7 @@ myTurtle.say("Hello, World!")
 ## Step 6
 Success!
 
-Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run it again, click the "🔁" button on the game console.
+Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run your program again, click the "🔁" button on the game console.
 
 ## Step 7
 Done.
