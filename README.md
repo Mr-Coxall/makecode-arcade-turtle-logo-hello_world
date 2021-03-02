@@ -37,12 +37,6 @@ Turtle Logo uses MakeCode Arcade to teach the fundamentals of programming. You w
 ## Step 2
 It is tradition with programmers when they start using a new programming language to get the computer to say ["Hello, World!"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#:~:text=A%20%22Hello%2C%20World!%22%20program%20generally%20is%20a%20computer,by%20people%20learning%20to%20code.) back to them. This might seem strange but just getting the computer to say something back to you can sometime be very complex.
 
-## Step 3
-You will need 3 blocks to make this happen and the first 2 are already provided for you below. All our programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
-```blocks
-
-```
-
 ## Step 2
 Into the provided code below, drag out the ⇢``myTurtle move forward 25 steps``⇠ block and then see what happens to your **Turtle**.
 ```blocks
