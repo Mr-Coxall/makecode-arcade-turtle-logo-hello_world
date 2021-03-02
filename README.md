@@ -45,7 +45,7 @@ You will need 3 blocks to make this happen and the first 2 are already provided 
 ```
 
 ## Step 4
-Next you will need to create your turtle. To do this you use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. This has already been done for you. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name "**myTurtle**", or more technically a [variable](https://tinyurl.com/95n35y8w) name "**myTurtle**", that you can use as a reference in your program.
+Next you will need to create your turtle. To do this you use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. This has already been done for you. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name "**myTurtle**", or more technically a [variable](https://tinyurl.com/95n35y8w) named "**myTurtle**", that you can use as a reference in your program.
 ```blocks
 let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -94,7 +94,7 @@ myTurtle.say("Hello, World!")
 ## Step 6
 Success!
 
-Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run it again, click the "reload" button on the game console.
+Notice in the game console to the left, your object said "Hello, World!" for 1 second and then it words vanish. If you want to run it again, click the "🔁" button on the game console.
 
 ## Step 7
 Done.
