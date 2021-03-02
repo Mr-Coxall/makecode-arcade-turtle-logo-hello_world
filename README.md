@@ -38,7 +38,11 @@ It is tradition with programmers when they start using a new programming languag
 
 ## Step 3
 You will need 3 blocks to make this happen and the first 2 are already provided for you below. All our programs will have an ⇢``on start``⇠ block. This block runs all the commands that are inside it as soon as the program begins.
-![on start](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-hello_world/raw/main/assets/on_start_block.png)
+```blocks
+/**
+ * This is the "on start" block
+ */
+```
 
 ## Step 4
 Next you will need to create your turtle. To do this you would use the ⇢``set myTurtle to turtle of sprite ▢ of kind Player``⇠ block and place it inside the ⇢``on start``⇠ block. This has already been done for you. Each new turtle object in your program will need one of these. This creates the turtle object and gives it a name "**myTurtle**", or more technically a [variable](https://tinyurl.com/95n35y8w) name "**myTurtle**", that you can use as a reference in your program.
